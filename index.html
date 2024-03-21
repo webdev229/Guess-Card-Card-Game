@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750">
+    <link rel="icon" href="./images/app-store.png" type="image/icon">
+    <title>Guess Card: Card Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    <section>
+        <div class="flex justify-center items-center w-full overflow-hidden">
+            <div class="w-[750px] flex flex-col justify-center items-center p-2">
+                <div id="navbar" class="border-b-2 px-4 py-2 z-50">
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-2 items-center text-[#0a84ff]">
+                            <div class="text-5xl flex"><ion-icon name="chevron-back-outline"></ion-icon></div>
+                            <button onClick="appUrl()" class="text-[37px]">Tìm kiếm</button>
+                        </div>
+                        <!-- iconSmall get from script -->
+                        <div class="flex ml-20"><img id="iconSmall" src="" alt="Icon" class="w-[63px] rounded-[16px]"></div>
+                        <div class="flex gap-2 items-center">
+                            <span class="text-[#8a8a8e] text-[20px]">Mua In-App</span>
+                            <button onClick="appUrl()" class="bg-[#0a84ff] rounded-full text-white font-semibold text-[33px] p-2.5">TẢI GAME</button>
+                        </div>
+                    </div>
+                </div>  
+
+                <!-- Main -->
+                <div class="mt-6 flex flex-col">
+                    <!-- icons -->
+                    <div class="flex gap-6 px-6">
+                        <!-- Icon get from script -->
+                        <div><img id="iconLarge" src="" alt="icon" class="iconn w-[225px] rounded-[50px]"></div>
+                        <div class="px-2 mt-2">
+                            <div class="leading-10 *:block">
+                                <span class="text-[28px] font-bold text-gray-900">Guess Card: Card Game</span>
+                                <span class="text-[23px] text-[#8a8a8e]">Game Đỉnh Cao - Đăng Ký Nhận</span>
+                                <span class="text-[23px] text-[#8a8a8e] leading-3">Ngay 50K!</span>
+                            </div>
+                            
+                            <div class="flex justify-between items-center mt-6">
+                                <button onClick="appUrl()" class="bg-[#0a84ff] py-1.5 px-8 rounded-full text-[33px] text-white">TẢI XUỐNG</button>
+                                <div class="">
+                                    <button onClick="appUrl()">
+                                        <ion-icon name="share-outline" class="text-[53px] text-blue-600"></ion-icon></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ... -->
+                    <div class="header-info">
+                        <div class="scroll flex overflow-auto scrolling-touch">
+                            <div class="ratings text-[#8a8a8e] flex flex-col items-center">
+                                <span class="text-[22px] text-[#a2a2a2]">4,4 N XẾP HẠNG</span>
+                                <span class="text-[44px] font-bold">4,8</span>
+                                <div class="flex gap-1.5">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-half"></ion-icon>
+                                </div>
+                            </div>
+                            
+                            <div class="ratings text-[#8a8a8e] flex flex-col items-center">
+                                <span class="text-[22px] text-[#a2a2a2]">TUỔI</span>
+                                <span class="text-[44px] font-bold">12+</span>
+                                <div class="flex gap-2">
+                                    <span class="text-[22px] text-[#a2a2a2]">TUỔI</span>
+                                </div>
+                            </div>
+    
+                            <div class="ratings text-[#8a8a8e] flex flex-col items-center">
+                                <span class="text-[22px] text-[#a2a2a2]">BXH</span>
+                                <span class="text-[44px] font-bold">#01</span>
+                                <div class="flex gap-2">
+                                    <span class="text-[22px] text-[#a2a2a2]">CASINO</span>
+                                </div>
+                            </div>
+    
+                            <div class="ratings text-[#8a8a8e] flex gap-2 flex-col items-center">
+                                <span class="text-[22px] text-[#a2a2a2]">NHÀ PHÁT HÀNH</span>
+                                <div class="text-[44px] font-bold"><img src="./images/06.png"></div>
+                                <div class="flex gap-2">
+                                    <span class="text-[22px] text-[#a2a2a2]">HAY88</span>
+                                </div>
+                            </div>
+    
+                            <div class="ratings text-[#8a8a8e] flex flex-col items-center">
+                                <span class="text-[22px] text-[#a2a2a2]">NGÔN NGỮ</span>
+                                <span class="text-[44px] font-bold">VIE</span>
+    
+                                <div class="flex gap-2">
+                                    <span class="text-[22px] text-[#a2a2a2]">Tiếng Việt</span>
+                                </div>
+                            </div>
+
+                            <div class="ratings text-[#8a8a8e] flex flex-col items-center">
+                                <span class="text-[22px] text-[#a2a2a2]">KÍCH CỠ</span>
+                                <span class="text-[44px] font-bold">36,9</span>
+    
+                                <div class="flex gap-2">
+                                    <span class="text-[22px] text-[#a2a2a2]">MB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- images items get from script -->
+                    <div class="flex justify-center items-center p-2">
+                        <div id="image-items" onClick="appUrl()" class="pic-scroll w-full h-[450px] flex gap-4 no-scrollbar overflow-x-scroll cursor-pointer">
+                        </div>
+                    </div>
+
+                    <!-- Nhà phát triển -->
+                    <div class="flex justify-between px-5 mt-10 text-[#808080]">
+                        <div class="flex gap-4 items-center">
+                            <img src="./images/11.png">
+                            <span class="block text-[25px]">Nhà phát triển</span>
+                        </div>
+                        <div class="text-5xl ">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <!-- line -->
+                    <div class="header-info"></div>
+                    <!-- ... -->
+                    <div class="mt-6 px-5">
+                        <div class="text-[25px] text-[#616161] *:block">
+                            <span># Trang giải trí online đa thể loại đã được công nhận tại thị trường quốc tế! Trang giải trí HAY88 hiện đã chính thức ra mắt!!</span>
+                            <span>Bất kỳ mọi lúc mọi nơi! Bạn đều có thể cùng chung vui cùng với những người chơi trên toàn thế giới thông qua điện thoại tại ""Trang giải trí HAY88""!</span>
+                            <span>#HAY88#</span>
+                            <span># MIỄN PHÍ 50,000VND</span>
+                            <span># Vậng may vài giây nhận ngay tiền thật💲💲</span>
+                            <span># Đăng ký miễn phí</span>
+                            <span> # CSKH 24/7</span>   
+                        </div>
+                        <div class="text-[28px] text-[#0a84ff] flex justify-end">
+                            <button onClick="appUrl()">Xem thêm</button>
+                        </div>
+                        <div class="mt-6 leading-10">
+                            <div class="text-[35px] text-[#0a84ff] flex justify-between">
+                                <span>HAY88 CORPORATION</span>
+                                <div class="text-[#808080] text-5xl"><ion-icon name="chevron-forward-outline"></ion-icon></div>
+                            </div>
+                            <span class="text-[25px] text-[#808080]">Nhà phát triển</span>
+                        </div>
+                    </div>
+
+                    <!-- line -->
+                    <div class="header-info"></div>
+                    <!-- SỰ KIỆN RA MẮT -->
+                    <div class="mt-6">
+                        <span class="text-[#1d1d1f] text-[50px] font-bold px-5">SỰ KIỆN RA MẮT</span>
+                        <span class="text-[#0a84ff] text-[35px] block px-5 mt-4">Đang diễn ra</span>
+
+                        <!-- app store picture get from script -->
+                        <div class="flex justify-center items-center p-2">
+                            <div id="banner-items" class="pic-scroll w-full h-[495px] flex gap-4 no-scrollbar overflow-x-scroll">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- line -->
+                    <div class="line"></div>
+                    <!-- Xếp hạng & nhận xét -->
+                    <!-- 4.8 -->
+                    <div class="mt-4 px-5">
+                        <div class="flex justify-between items-center">
+                            <span class="text-[46px] text-[#1d1d1f] font-bold">Xếp hạng & nhận xét</span>
+                            <button onClick="appUrl()" class="text-[32px] text-[#0a84ff]">Xem tất cả</button>
+                        </div>
+                        <!-- 4,8 -->
+                        <div class="flex justify-center items-center ">
+                            <div class="w-5/12">
+                                <div class="flex flex-col items-center">
+                                    <span class="text-[100px] text-[#1d1d1f] font-bold block">4.8</span>
+                                    <span class="text-[32px] text-[#8a8a8e] block">/5</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-4 w-7/12">
+                                <div class="w-full">
+                                    <!-- 1 -->
+                                    <div class="mt-1 grid grid-cols-12 gap-3 items-center">
+                                        <div class="col-span-3 flex gap-0.5 justify-end text-[#8a8a8e]">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                        <div class="col-span-9 w-full bg-[#efeff4] h-0.5">
+                                            <div class="bg-[#636366] h-0.5" style="width: 84%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="mt-1 grid grid-cols-12 gap-3 items-center">
+                                        <div class="col-span-3 flex gap-0.5 justify-end text-[#8a8a8e]">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                        <div class="col-span-9 w-full bg-[#efeff4] h-0.5">
+                                            <div class="bg-[#636366] h-0.5" style="width: 15%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="mt-1 grid grid-cols-12 gap-3 items-center">
+                                        <div class="col-span-3 flex gap-0.5 justify-end text-[#8a8a8e]">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                        <div class="col-span-9 w-full bg-[#efeff4] h-0.5">
+                                            <div class="bg-[#636366] h-0.5" style="width: 5%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="mt-1 grid grid-cols-12 gap-3 items-center">
+                                        <div class="col-span-3 flex gap-0.5 justify-end text-[#8a8a8e]">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                        <div class="col-span-9 w-full bg-[#efeff4] h-0.5">
+                                            <div class="bg-[#636366] h-0.5" style="width: 3%"></div>
+                                        </div>
+                                    </div>
+                                    <!-- 5 -->
+                                    <div class="mt-1 grid grid-cols-12 gap-3 items-center">
+                                        <div class="col-span-3 flex gap-0.5 justify-end text-[#8a8a8e]">
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                        <div class="col-span-9 w-full bg-[#efeff4] h-0.5">
+                                            <div class="bg-[#636366] h-0.5" style="width: 8%"></div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="flex justify-end items-center">
+                                    <span class="text-[32px] text-[#8a8a8e]">6.713 xếp hạng</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- box-content -->
+                    <div class="scroll flex gap-4 px-2">
+                        <div class="box-itemm bg-[#f2f2f7] p-10 rounded-3xl">
+                            <div class="">
+                                <div class="flex justify-between items-center text-[#1d1d1f] text-[25px]">
+                                    <span class="font-bold">Hotboy Hà Thành</span>
+                                    <span>18/08/2023</span>
+                                </div>
+                                <div class="flex gap-0.5 mt-2.5 text-[27px] text-orange-400">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star" class="text-gray-400"></ion-icon>
+                                </div>
+                                <div class="mt-8 text-[#1d1d1f] text-[25px] tracking-wide">
+                                    <span>Game mới ra có khác, vừa đổi được 500K.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-itemm bg-[#f2f2f7] p-10 rounded-3xl">
+                            <div class="">
+                                <div class="flex justify-between items-center text-[#1d1d1f] text-[25px]">
+                                    <span class="font-bold">Cài game</span>
+                                    <span>18/08/2023</span>
+                                </div>
+                                <div class="flex gap-0.5 mt-2.5 text-[27px] text-orange-400">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star" class="text-gray-400"></ion-icon>
+                                </div>
+                                <div class="mt-8 text-[#1d1d1f] text-[25px] tracking-wide">
+                                    <span>Đồ họa cũng được, thích mỗi cái MD5, nhưng đua top khó vậy!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- line -->
+                    <div class="line"></div>
+                    <!-- Ưu Đãi Ra Mắt -->
+                    <div class="mt-10 px-5">
+                        <div class="flex justify-between items-center">
+                            <span class="text-[#1d1d1f] text-[38px] font-bold">Ưu Đãi Ra Mắt</span>
+                            <span class="text-[#0a84ff] text-[30px]">Lịch sử phiên bản</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-4 *:text-[#8f8f8f] text-[27px]">
+                            <span>Phiên bản 2.9.8</span>
+                            <span>3 tuần trước</span>
+                        </div>
+                        <div class="text-[25px] leading-10 flex gap-4 flex-col mt-6">
+                            <span>- Nâng mức x6 hũ</span>
+                            <span>- Nạp x3 lần đầu tiên</span>
+                            <span>- Nhiệm vụ 50K 1 tuần</span>
+                        </div>
+                    </div>
+
+                    <!-- line -->
+                    <div class="line mt-20"></div>
+                    <!-- Chế độ riêng tư cho ứng dụng -->
+                    <div class="mt-10 px-5">
+                        <div class="flex justify-between">
+                            <span class="text-[#1d1d1f] text-[38px] font-bold leading-10">Chế độ riêng tư cho ứng <br> dụng</span>
+                            <button onClick="appUrl()" class="text-[#0a84ff] text-[30px]">Xem chi tiết</button>
+                        </div>
+                        <p class="text-[#8f8f8f] text-[25px] block mt-6 tracking-wide">Nhà phát triển, HAY88 CORPORATION, đã cho biết rằng thực tiễn quyền riêng tư của ứng dụng có thể bao gồm việc xử lý dữ liệu như được mô tả ở bên dưới. Để biết thêm thông tin, hãy <span class="text-[#0a84ff] text-[30px]">xem chính sách quyền riêng tư của nhà phát triển</span></p>
+                    </div>
+
+                    <!-- ... -->
+                    <div class="mt-10 px-6">
+                        <div class="box-shadow p-10 flex items-center flex-col">
+                            <img src="./images/13.png">
+                            <span class="text-[34px] block font-bold mt-2">Dữ Liệu Được Dùng Để Theo Dõi Bạn</span>
+                            <p class="text-[#8f8f8f] text-[27px] block text-center">Dữ liệu sau đây có thể được sử dụng để theo dõi bạn <br> trên các ứng dụng và trang web do các công ty khác sở <br> hữu:</p>
+                            <div class="flex gap-3 items-center mt-6">
+                                <img src="./images/14.png">
+                                <span class="text-[27px]">Mã Định Danh</span>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="box-shadow mt-10 p-10 flex items-center flex-col">
+                            <img src="./images/15.png">
+                            <span class="text-[34px] block font-bold mt-2">Dữ Liệu Liên Kết Với Bạn</span>
+                            <p class="text-[#8f8f8f] text-[27px] block text-center">Đữ liệu sau đây có thể được thu thập và liên kết với danh <br> tính của bạn:</p>
+                            <div class="grid grid-cols-2 mt-6">
+                                <div class="flex gap-2">
+                                    <div>
+                                        <img src="./images/16.png">
+                                    </div>
+                                    <span class="text-[27px]">Thông Tin Liên Hệ</span>
+                                </div>
+
+                                <div class="flex gap-2">
+                                    <div>
+                                        <img src="./images/17.png">
+                                    </div>
+                                    <span class="text-[27px]">Nội Dung Của Người Dùng</span>
+                                </div>
+
+                                <div class="flex gap-2 mt-6">
+                                    <div>
+                                        <img src="./images/14.png">
+                                    </div>
+                                    <span class="text-[27px]">Mã Định Danh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="box-shadow mt-10 p-10 flex items-center flex-col">
+                            <img src="./images/18.png">
+                            <span class="text-[34px] block font-bold mt-2">Dữ Liệu Không Liên Kết Với Bạn</span>
+                            <p class="text-[#8f8f8f] text-[27px] block text-center">Đữ liệu sau đây có thể được thu thập nhưng không liên <br> kết với danh tính của bạn:</p>
+                            <div class="grid grid-cols-2 mt-6">
+                                <div class="flex gap-2">
+                                    <div>
+                                        <img src="./images/17.png">
+                                    </div>
+                                    <span class="text-[27px]">Nội Dung Của Người Dùng</span>
+                                </div>
+
+                                <div class="flex gap-2">
+                                    <div>
+                                        <img src="./images/19.png">
+                                    </div>
+                                    <span class="text-[27px]">Dữ Liệu Sử Dụng</span>
+                                </div>
+
+                                <div class="flex gap-2 mt-6">
+                                    <div>
+                                        <img src="./images/14.png">
+                                    </div>
+                                    <span class="text-[27px]">Mã Định Danh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ... -->
+                        <div class="mt-20 text-[30px]">
+                            <p class="text-[#8f8f8f] block mt-6 tracking-wide">Thực tiễn quyền riêng tư có thể thay đổi, ví dụ như dựa trên các tính năng mà bạn sử dụng hoặc tuổi của bạn.</p>
+                            <div onClick="appUrl()" class="text-[#0a84ff] cursor-pointer">Tìm hiểu thêm</div>
+                        </div>
+                    </div>
+
+                     <!-- line -->
+                     <div class="line"></div>
+                     <!-- Thong tin -->
+                     <div class="py-5 px-6">
+                        <span class="block text-[#1d1d1f] text-[50px] font-bold">Thông Tin</span>
+                        <div class="flex justify-between items-center py-[30px] border-b border-gray-300 text-[30px]">
+                            <span class="text-[#a2a2a2]">Nhà cung cấp</span>
+                            <span class="text-[#1d1d1f]">HAY88 CORPORATION</span>
+                        </div>
+                        <div class="flex justify-between items-center py-[30px] border-b border-gray-300 text-[30px]">
+                            <span class="text-[#a2a2a2]">Kích thước</span>
+                            <span class="text-[#1d1d1f]">36,9 MB</span>
+                        </div>
+                        <div class="flex justify-between items-center py-[30px] border-b border-gray-300 text-[30px]">
+                            <span class="text-[#a2a2a2]">Danh mục</span>
+                            <span class="text-[#1d1d1f]">Casino</span>
+                        </div>
+                        <div class="flex justify-between items-center py-[30px] border-b border-gray-300 text-[30px]">
+                            <span class="text-[#a2a2a2]">Tương thích</span>
+                            <div class="flex justify-center items-center gap-4">
+                                <span class="text-[#1d1d1f]">Trên iphone này</span>
+                                <div class="text-4xl flex text-[#0a84ff]"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center py-[30px] border-b border-gray-300 text-[30px]">
+                            <span class="text-[#a2a2a2]">Ngôn ngữ</span>
+                            <span class="text-[#1d1d1f]">Tiếng Anh</span>
+                        </div>
+                        <div class="flex justify-between items-center py-[30px] border-b border-gray-300 text-[30px]">
+                            <span class="text-[#a2a2a2]">Tuổi</span>
+                            <div class="flex justify-center items-center gap-4">
+                                <span class="text-[#1d1d1f]">12+</span>
+                                <div class="text-4xl flex text-[#0a84ff]"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center py-[30px] border-b border-gray-300 text-[30px]">
+                            <span class="text-[#a2a2a2]">Mua In-App</span>
+                            <div class="flex justify-center items-center gap-4">
+                                <span class="text-[#1d1d1f]">Có</span>
+                                <div class="text-4xl flex text-[#0a84ff]"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center py-[30px] border-b border-gray-300 text-[30px]">
+                            <span class="text-[#a2a2a2]">Bản quyền</span>
+                            <div class="flex justify-center items-center gap-4">
+                                <span class="text-[#1d1d1f]">HAY88 PRO</span>
+                                <div class="text-4xl flex text-[#0a84ff]"><ion-icon name="chevron-down-outline"></ion-icon></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center py-[30px] mb-[100px] border-b border-gray-300 text-[30px]">
+                            <span class="text-[#0a84ff]">Trang web nhà phát triển</span>
+                            <div class=""><img src="./images/21.png"></div>
+                        </div>
+                     </div>
+                </div>
+                <!-- footer -->
+                <div class=" w-[750px] fixed bottom-0 mt-10">
+                    <div class="grid grid-cols-5 mt-4 border-t-2 border-gray-200 py-3 bg-[#f7f7f7]">
+                        <button onClick="appUrl()" class="flex gap-3 flex-col items-center">
+                            <img src="./images/22.png">
+                            <span class="text-[25px] text-[#979797]">Nạp Đầu</span>
+                        </button>
+                        <button onClick="appUrl()" class="flex gap-3 flex-col items-center">
+                            <img src="./images/23.png">
+                            <span class="text-[25px] text-[#979797]">Nổ Hũ</span>
+                        </button>
+                        <button onClick="appUrl()" class="flex gap-3 flex-col items-center">
+                            <img src="./images/24.png">
+                            <span class="text-[25px] text-[#979797]">24/7</span>
+                        </button>
+                        <button onClick="appUrl()" class="flex gap-3 flex-col items-center">
+                            <img src="./images/25.png">
+                            <span class="text-[25px] text-[#979797]">Uy Tín</span>
+                        </button>
+                        <button onClick="appUrl()" class="flex gap-3 flex-col items-center">
+                            <img src="./images/26.png">
+                            <span class="text-[25px] text-[#979797]">Xanh Chín</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

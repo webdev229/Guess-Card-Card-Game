@@ -1,0 +1,207 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+body {
+    font-family: 'SF Pro Display', sans-serif;
+}
+#navbar {
+    background-color: #f7f7f7;
+    position: fixed;
+    top: -100px;
+    width: 750px;
+    display: block;
+    transition: top 0.3s;
+}
+
+/* ================ */
+
+.custom-btn {
+    width: 230px;
+    height: 60px;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    /*transition: all 0.3s ease;*/
+    position: relative;
+    display: inline-block;
+    outline: none;
+    line-height: 25px;
+    font-size: 33px;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 20px 10px 20px 10px;
+    margin: 4% 0 0 0;
+}
+
+.btn-11 {
+    border: none;
+    background: #0a84ff;
+    color: #fff;
+    overflow: hidden;
+}
+
+.btn-11:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+
+.btn-11:hover {
+    opacity: .7;
+}
+
+.btn-11:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+/* ================ */
+.header-info {
+    width: 100%;
+    margin: 4% auto 0 auto;
+    float: left;
+    border-top: 1px solid #ccc;
+}
+.line {
+    width: 95%;
+    margin: 4% auto 0 auto;
+    float: left;
+    border-top: 1px solid #ccc;
+}
+
+.scroll {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+    margin: 0 0;
+    cursor: default;
+    overflow: scroll hidden;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0px 1.25rem;
+    scrollbar-width: none;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll.active {
+    cursor: grab;
+    cursor: -webkit-grab;
+}
+
+.scroll .ratings {
+    width: 32%;
+    height: auto;
+    flex: 0 0 auto;
+    gap: 15px;
+    margin: 4% 0;
+    border: none;
+    outline: none;
+    color: #a2a2a2;
+    font-size: 22px;
+    text-align: center;
+    background: url("../images/line.jpg") top right no-repeat;
+}
+.pic-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll .box-itemm {
+    width: 100%;
+    height: auto;
+    flex: 0 0 auto;
+    margin: 4% 0;
+    border: none;
+    outline: none;
+    color: #a2a2a2;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* .scroll .Capacity {
+    width: 32%;
+    height: auto;
+    flex: 0 0 auto;
+    margin: 4% 0;
+    border: none;
+    outline: none;
+    color: #a2a2a2;
+    font-size: 22px;
+    text-align: center;
+    background: url("../images/line.jpg") top right no-repeat;
+}
+
+.scroll .publisher {
+    width: 32%;
+    height: auto;
+    flex: 0 0 auto;
+    margin: 4% 0;
+    color: #a2a2a2;
+    font-size: 22px;
+    text-align: center;
+    background: url("../images/line.jpg") top right no-repeat;
+} */
+
+/* ====box-scroll */
+.box-content {
+    width: 100%;
+    margin: 4% auto 4% auto;
+    float: left;
+}
+.scroll-box {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    margin: 0 0;
+    cursor: default;
+    overflow: scroll hidden;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0px 1.25rem;
+    scrollbar-width: none;
+}
+
+.scroll-box::-webkit-scrollbar {
+    display: none;
+}
+.scroll-box .box-item {
+    width: 100%;
+    height: auto;
+    flex: 0 0 auto;
+    /* margin: 0 2% 0 2%; */
+    border: none;
+    outline: none;
+}
+
+/* ====================== */
+.box-shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 30px;
+}
+
+
+/* =============================== */
